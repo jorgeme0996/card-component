@@ -9,10 +9,20 @@
       :host {
         display: block;
       }
+      
+      paper-card {
+        border-radius: 10%; 
+      }
+
+      paper-card:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
     </style>
     <paper-card class="rate">
       <div class="card-content">
-        <div class="rate-header"> <h1>[[planet.name]]</h1></div>
+        <div class="rate-header"><h1>[[planet.name]]</h1></div>
         <div class="rate-name"></div>
         <div><h3>[[planet.terrain]]</h3></div>
       </div>
@@ -42,7 +52,7 @@
             value: () => {
               {}
             }
-          }
+          },
         };
       }
     }
